@@ -1,12 +1,12 @@
 <?php
 
-namespace RachidLaasri\LaravelInstaller\Middleware;
+namespace Abdullah\WebInstaller\Middleware;
 
 use Closure;
 
 class canUpdate
 {
-    use \RachidLaasri\LaravelInstaller\Helpers\MigrationsHelper;
+    use \Abdullah\WebInstaller\Helpers\MigrationsHelper;
 
     /**
      * Handle an incoming request.
@@ -25,7 +25,7 @@ class canUpdate
                 // if the application has not been installed,
                 // redirect to the installer
                 if (! $canInstall->alreadyInstalled()) {
-                    return redirect()->route('LaravelInstaller::welcome');
+                    return redirect()->route('WebInstaller::welcome');
                 }
 
                 if ($this->alreadyUpdated()) {

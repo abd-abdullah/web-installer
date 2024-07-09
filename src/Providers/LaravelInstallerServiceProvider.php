@@ -1,11 +1,11 @@
 <?php
 
-namespace RachidLaasri\LaravelInstaller\Providers;
+namespace Abdullah\WebInstaller\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use RachidLaasri\LaravelInstaller\Middleware\canInstall;
-use RachidLaasri\LaravelInstaller\Middleware\canUpdate;
+use Abdullah\WebInstaller\Middleware\canInstall;
+use Abdullah\WebInstaller\Middleware\canUpdate;
 
 class LaravelInstallerServiceProvider extends ServiceProvider
 {
@@ -47,18 +47,18 @@ class LaravelInstallerServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../Config/installer.php' => base_path('config/installer.php'),
-        ], 'laravelinstaller');
+        ], 'webinstaller');
 
         $this->publishes([
             __DIR__.'/../assets' => public_path('installer'),
-        ], 'laravelinstaller');
+        ], 'webinstaller');
 
         $this->publishes([
             __DIR__.'/../Views' => base_path('resources/views/vendor/installer'),
-        ], 'laravelinstaller');
+        ], 'webinstaller');
 
         $this->publishes([
             __DIR__.'/../Lang' => base_path('resources/lang'),
-        ], 'laravelinstaller');
+        ], 'webinstaller');
     }
 }

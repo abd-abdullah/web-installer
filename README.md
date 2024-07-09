@@ -50,14 +50,14 @@ The current features are :
 
 ```php
 	'providers' => [
-	    RachidLaasri\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class,
+	    Abdullah\WebInstaller\Providers\LaravelInstallerServiceProvider::class,
 	];
 ```
 
 3. Publish the packages views, config file, assets, and language files by running the following from your projects root folder:
 
 ```bash
-    php artisan vendor:publish --tag=laravelinstaller
+    php artisan vendor:publish --tag=webinstaller
 ```
 
 ## Routes

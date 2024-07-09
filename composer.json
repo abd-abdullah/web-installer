@@ -1,5 +1,5 @@
 {
-    "name": "abd-abdullah/web-installer",
+    "name": "abdullah/web-installer",
     "description": "Laravel web installer",
     "license": "MIT",
     "authors": [
@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AbdAbdullah\\WebInstaller\\Providers\\LaravelInstallerServiceProvider"
+                "Abdullah\\WebInstaller\\Providers\\LaravelInstallerServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace RachidLaasri\LaravelInstaller\Helpers;
+namespace Abdullah\WebInstaller\Helpers;
 
 use Exception;
 use Illuminate\Http\Request;

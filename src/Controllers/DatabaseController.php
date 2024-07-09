@@ -1,9 +1,9 @@
 <?php
 
-namespace RachidLaasri\LaravelInstaller\Controllers;
+namespace Abdullah\WebInstaller\Controllers;
 
 use Illuminate\Routing\Controller;
-use RachidLaasri\LaravelInstaller\Helpers\DatabaseManager;
+use Abdullah\WebInstaller\Helpers\DatabaseManager;
 
 class DatabaseController extends Controller
 {
@@ -29,7 +29,7 @@ class DatabaseController extends Controller
     {
         $response = $this->databaseManager->migrateAndSeed();
 
-        return redirect()->route('LaravelInstaller::final')
+        return redirect()->route('WebInstaller::final')
                          ->with(['message' => $response]);
     }
 }
