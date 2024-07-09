@@ -4,12 +4,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Rachid Laasri",
-            "email": "rashidlaasri@gmail.com"
-        },
-        {
-            "name": "Jeremy Kenedy",
-            "email": "jeremykenedy@gmail.com"
+            "name": "Md. Abdullah",
+            "email": "abdullah001rti@gmail.com"
         }
     ],
     "require": {
@@ -17,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RachidLaasri\\LaravelInstaller\\": "src/"
+            "Abdullah\\WebInstaller\\": "src/"
         },
         "files": [
             "src/Helpers/functions.php"
@@ -26,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RachidLaasri\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
+                "Abdullah\\WebInstaller\\Providers\\LaravelInstallerServiceProvider"
             ]
         }
     },
