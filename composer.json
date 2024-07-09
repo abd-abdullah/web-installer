@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Abdullah\\WebInstaller\\Providers\\LaravelInstallerServiceProvider"
+                "AbdAbdullah\\WebInstaller\\Providers\\LaravelInstallerServiceProvider"
             ]
         }
     },
